@@ -1,12 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whatsup Design</title>
-    <link rel
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbox</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, #83a4d4, #b6fbff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+
+.chatbox-container {
+  width: 400px;
+  height: 600px;
+  background: linear-gradient(135deg, #ffe259, #ffa751);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.chatbox-header {
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+.chatbox-content {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  position: relative;
+  background-color: #f1f1f1;
+}
+
+.message {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.message.user .message-text {
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  align-self: flex-start;
+  padding: 10px;
+  border-radius: 10px 10px 10px 0;
+  color: white;
+  max-width: 70%;
+}
+
+.message.admin .message-text {
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  align-self: flex-end;
+  padding: 10px;
+  border-radius: 10px 10px 0 10px;
+  color: white;
+  max-width: 70%;
+}
+
+.message .timestamp {
+  font-size: 12px;
+  color: gray;
+  align-self: flex-end;
+  margin-top: 5px;
+}
+
+
+.chatbox-footer {
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  position: sticky;
+  bottom: 0;
+}
+
+.input-box {
+  flex-grow: 1;
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.send-button {
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.send-button:hover {
+  background: linear-gradient(to right, #ff5e62, #ff9966);
+}
+
+
+@media (max-width: 500px) {
+  .chatbox-container {
+    width: 100%;
+    height: 100%;
+  }
+}*/
+
+
+  </style>
 </head>
 <body>
-    
+  
+  <div class="chatbox-container">
+    <div class="chatbox-header">
+      <h1>CHATS</h1> 
+      <img src="./ASSETS/IMAGES/msg.jpg" height="30" width="30">
+      <img src="./ASSETS/IMAGES/channels.webp" height="30" width="30">
+      <img src="./ASSETS/IMAGES/community.jpg" hright="30" width="30">
+      <img src="./ASSETS/IMAGES/status.webp" height="30" width="30">
+    </div>
+    <div  align="center"class="chatbox-content">
+      <div  class="message user">
+        <div class="message-text">HI RAA </div>
+        <div class="timestamp">10:00 AM</div>
+        <div  align="center"class="date">1/09/24</div>
+      </div>
+      <div class="message admin">
+        <div class="message-text">HI RA</div>
+        <div class="timestamp">10:01 AM</div>
+      </div>
+      <div class="message user">
+        <div class="message-text">YM CHESTUNNAVU RAA </div>
+        <div class="timestamp">10:02 AM</div>
+      </div>
+      <div class="message admin">
+        <div class="message-text">KALIEY RA MARI</div>
+        <div class="timestamp">10:03 AM</div>
+      </div>
+      <div class="message user">
+        <div class="message-text">MANDI KI PODAMA RA VASTAVA</div>
+        <div class="timestamp">10:04 AM</div>
+      </div>
+      <div class="message admin">
+        <div class="message-text">HA VELDAM RA EVAREVARU</div>
+        <div class="timestamp">10:06 AM</div>
+      </div>
+      <div class="message user">
+        <div class="message-text">NENU SAI GADU,NITIN,THARUN,MOHAN, SANDEEP,SURESH, AND RAJU BHAI</div>
+        <div class="timestamp">10:08 AM</div>
+      </div>
+      <div class="message admin">
+        <div class="message-text">HA RANDI MARI PODAM</div>
+        <div class="timestamp">10:10 AM</div>
+      </div>
+      <div class="message user">
+        <div class="message-text">HA VASTUNNAMU RA ENKA START AYYAM AKKADA KALUDDAM KKNA RA MARI</div>
+        <div class="timestamp">10:15 AM</div>
+      </div>
+      <div class="message admin">
+        <div class="message-text">HA KK </div>
+        <div class="timestamp">10:20 AM</div>
+      </div>
+      <div class="message user">
+        <div class="message-text">EVAREVARU YM TINTARU MOHAMATAM PADAKUNDA CHEPPANDI RA </div>
+        <div class="timestamp">10:30 AM</div>
+      </div>
+      <div class="message admin">
+        <div class="message-text">HA SAREY</div>
+        <div class="timestamp">12:10 PM</div>
+      </div>
+      <div class="message user">
+        <div class="message-text">ANDARAKI CHICKEN FRY MANDI RA  </div>
+        <div class="timestamp">12:50 PM</div>
+      </div>
+      <div class="message admin">
+        <div class="message-text">HA SAREY</div>
+        <div class="timestamp">1:10 PM</div>
+      </div>
+      <div class="message user">
+        <div class="message-text">HA TINNARA HAPPAY NA MARI </div>
+        <div class="timestamp">1:30 PM</div>
+      </div>
+      <div class="message admin">
+        <div class="message-text">HA </div>
+        <div class="timestamp">2:10 PM</div>
+      </div>
+      <div class="message user">
+        <div class="message-text">MONEY TIYANDI RA ENKA KATTALI </div>
+        <div class="timestamp">2:30 PM</div>
+      </div>
+      <div class="message admin">
+        <div class="message-text">ADENDI RA NUUVEGA RANDI ANNAVU TINNAMU </div>
+        <div class="timestamp">2:40 PM</div>
+      </div>
+      <div class="message user">
+        <div class="message-text">NENU RAMMANTE ENKA VACHEYATAMENA MARI  </div>
+        <div class="timestamp">2:50 PM</div>
+      </div>
+      <div class="message admin">
+        <div class="message-text">ADENDI RA ALA ANTAVU </div>
+        <div class="timestamp">3:0 PM</div>
+      </div>
+      <div class="message user">
+        <div class="message-text">HA SARE GANI MONEY PAY CHEYANDI ANDARU RA   </div>
+        <div class="timestamp">3:10 PM</div>
+      </div>
+      <div class="message admin">
+        <div class="message-text">HA SAREY RA  </div>
+        <div class="timestamp">3:20 PM</div>
+      </div>
+      <div class="message user">
+        <div class="message-text">ENKA YMINA COOL DRINKS KAVALA RA   </div>
+        <div class="timestamp">3:20 PM</div>
+      </div>
+      <div class="message admin">
+        <div class="message-text">MAKU VADDURA BABU ENKA VELDAM PADANDI</div>
+        <div class="timestamp">3:50 PM</div>
+      </div>
+      <div class="message user">
+        <div class="message-text">HA SAREY MARI BYE RA   </div>
+        <div class="timestamp">3:55 PM</div>
+      </div>
+      <div class="message admin">
+        <div class="message-text">HA BYE RA.....</div>
+        <div class="timestamp">4:00 PM</div>
+      </div>
+    </div>
+    <div class="chatbox-footer">
+      <input type="text" placeholder="Type a message..." class="input-box">
+      <button class="send-button">Send</button>
+    </div>
+</div>
 </body>
 </html>
